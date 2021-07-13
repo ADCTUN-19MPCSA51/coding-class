@@ -1,0 +1,24 @@
+import java.util.*; 
+class ReverseString 
+{
+ public static void main(String args[])
+ { 
+	Scanner sc=new Scanner(System.in); 
+	System.out.print("Enter data:"); 
+	String str=sc.nextLine(); 
+	StringBuilder sb=new StringBuilder(str); 
+	System.out.print(sb.reverse());
+ } 
+}
+
+/*
+OUTPUT:
+Enter data:hi, how are you
+uoy era woh ,ih
+
+Enter data:hi.hlo.gm
+mg.olh.ih
+
+Enter data:iam not fine
+enif ton mai
+*/
