@@ -1,0 +1,53 @@
+//removing character from the particular position in a string// 
+
+import java.util.*;
+class RemoveCharInString 
+{
+ public static void main(String args[])
+ { 
+	Scanner sc=new Scanner(System.in); 
+	System.out.print("Enter data:"); 
+	String str=sc.nextLine(); 
+	String ch[]=str.split(" "); 
+	for(int i=0;i<ch.length;i++)
+	 {
+	 StringBuffer sb=new StringBuffer(ch[i]);
+	 sb.deleteCharAt(1);
+	 System.out.print(sb.toString()+" ");
+	 }
+ } 
+}
+
+/*
+OUTPUT:
+Enter data:Aditya Degree College
+Aitya Dgree Cllege
+*/
+
+//removing character from the particular position// 
+
+import java.util.*;
+class RemoveCharInString 
+{
+ public static void main(String args[])
+ { 
+	Scanner sc=new Scanner(System.in); 
+	System.out.print("Enter data:"); 
+	String str=sc.nextLine(); 
+	String ch[]=str.split(" ");
+	System.out.print("Enter INDEX position of character that is to be deleted: ");
+	  int n=sc.nextInt(); 
+	for(int i=0;i<ch.length;i++)
+	 {
+	 StringBuffer sb=new StringBuffer(ch[i]);
+	 sb.deleteCharAt(n);
+	 System.out.print(sb.toString()+" ");
+	 }
+ } 
+}
+
+/*
+OUTPUT:
+Enter data:aditya degree college tuni
+Enter INDEX position of character that is to be deleted: 2
+adtya deree colege tui
