@@ -1,0 +1,113 @@
+import java.util.*; 
+class map1 
+{
+ public static void main(String args[])
+ {
+ HashMap<Integer,String> x=new HashMap<Integer,String>();
+ x.put(101,"Tom");
+ x.put(105,"Jerry");
+ x.put(109,"Sam");
+ System.out.println(x);
+ System.out.println(x.get(105));
+ x.remove(105);
+ System.out.println(x);
+ } 
+}
+
+/*
+OUTPUT:
+{101=Tom, 105=Jerry, 109=Sam}
+Jerry
+{101=Tom, 109=Sam}
+*/
+
+
+import java.util.*; 
+class map2
+{
+ public static void main(String args[])
+ {
+ HashMap<Integer,String> x=new HashMap<Integer,String>();
+ x.put(101,"Tom");
+ x.put(105,"Jerry");
+ x.put(109,"Sam");
+ System.out.println(x);
+ System.out.println(x.get(105));
+ System.out.println(x.keySet());
+ // To print with spaces (For each Loop)
+ for(Integer i: x.keySet()) 
+  {
+  if(i>=105) // i 
+  System.out.print(i + " "); 
+  } 
+ } 
+}
+
+/*
+OUTPUT:
+{101=Tom, 105=Jerry, 109=Sam}
+Jerry
+[101, 105, 109]
+105 109
+*/
+
+
+import java.util.*; 
+class map3
+{ 
+public static void main(String args[])
+ { 
+  HashMap<Integer,String> x=new HashMap<Integer,String>(); 
+  Scanner sc=new Scanner(System.in);
+  int n;
+  int key;
+  String value;
+  System.out.println("enter n value");
+  n=sc.nextInt();
+  for(int i=0;i<n;i++)
+   { 
+    key=sc.nextInt();
+    value=sc.next();
+    x.put(key,value);
+   } 
+  System.out.println(x);
+ } 
+}
+
+/*
+OUTPUT:
+enter n value
+3
+111
+ravi
+222
+rama
+333
+rohi
+{333=rohi, 222=rama, 111=ravi}
+*/
+
+ import java.util.*; 
+class map5
+{
+ public static void main(String args[])
+ {
+ HashMap<Integer,String> x=new HashMap<Integer,String>();
+ x.put(101,"Tom");
+ x.put(105,"Jerry");
+ x.put(109,"Sam");
+ System.out.println(x.values());
+ for(Map.Entry<Integer,String> i : x.entrySet())
+   {
+	System.out.println(i.getKey()+" "+i.getValue());
+   }
+ } 
+}
+
+/*
+OUTPUT:
+[Tom, Jerry, Sam]
+101 Tom
+105 Jerry
+109 Sam
+*/
