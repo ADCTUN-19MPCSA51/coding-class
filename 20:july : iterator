@@ -1,0 +1,27 @@
+import java.util.*; 
+public class it1
+{ 
+public static void main(String[] args)
+ { 
+	ArrayList<Integer> h1=new ArrayList<Integer>(); 
+	h1.add(10); 
+	h1.add(5); 
+	h1.add(12); 
+	h1.add(1100);
+	h1.add(100); 
+	Iterator<Integer> z=h1.iterator(); 
+	while(z.hasNext()) 
+	{
+	 int x=z.next();
+	 System.out.println(x);
+ 	}
+ } 
+}
+/*
+OUTPUT:
+10
+5
+12
+1100
+100
+*/
