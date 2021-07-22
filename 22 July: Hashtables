@@ -1,0 +1,61 @@
+//Hashtable program (Similar to HasMap)
+
+import java.util.*; 
+class table1
+{ 
+public static void main(String args[]) 
+   { 
+	Hashtable<Integer,String> x=new Hashtable<Integer,String>(); 
+	x.put(101,"Tom"); 
+	x.put(105,"Jerry");
+	x.put(109,"Sam"); 
+	System.out.println(x.values()); 
+	System.out.println(x); 
+	for (Map.Entry<Integer, String> i : x.entrySet()) 
+	  { 
+	System.out.println(i.getKey() + "---> " + i.getValue());
+	  }
+   } 
+}
+
+/*
+OUTPUT:
+[Sam, Jerry, Tom]
+{109=Sam, 105=Jerry, 101=Tom}
+109---> Sam
+105---> Jerry
+101---> Tom
+*/
+
+// stack programa 
+import java.util.*; 
+class stack1 
+{ 
+public static void main(String args[])
+   { 
+	Stack<Integer> x=new Stack<Integer>(); 
+	x.push(10); 
+	x.push(20); 
+	x.push(30); 
+	x.push(40); 
+	x.push(50); 
+	x.push(60); //top of stack 
+	System.out.println(x.size()); 
+	System.out.println(x); 
+	System.out.println("top of Stack is"+x.peek()); 
+	x.pop(); 
+	System.out.println(x); 
+	System.out.println(x.empty()); // false 
+	System.out.println(x.search(40));
+   } 
+}
+
+/*
+OUTPUT:
+6
+[10, 20, 30, 40, 50, 60]
+top of Stack is60
+[10, 20, 30, 40, 50]
+false
+2
+*/
