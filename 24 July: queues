@@ -1,0 +1,23 @@
+import java.util.*;
+class que1
+{
+public static void main(String args[])
+{
+    Queue <Integer> q1= new PriorityQueue<Integer>();  
+  	q1.add(10);
+   	q1.add(11);
+	q1.add(25);
+	q1.add(2);
+	q1.add(3);
+	q1.add(50);
+	q1.add(9);
+System.out.println(q1);
+q1.poll();
+System.out.println(q1);
+   
+}
+}
+/*
+output:
+[2, 3, 9, 11, 10, 50, 25]
+[3, 10, 9, 11, 25, 50]*/
