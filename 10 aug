@@ -1,0 +1,40 @@
+import java.util.*;
+class BubbleSort
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter size of array: ");
+		int n=sc.nextInt();
+		int[] ar=new int[n];
+		System.out.println("enter array elements: ");
+			for(int k=0;k<n;k++)
+			{
+				ar[k]=sc.nextInt();
+			}
+		for(int i=0;i<n-1;i++) //total number of passes or iterations
+		{
+			for(int j=0;j<n-1-i;j++) //total number of comparisions
+			{
+				if(ar[j]>ar[j+1])
+				{
+					int temp=ar[j];
+					ar[j]=ar[j+1];
+					ar[j+1]=temp;
+				}
+			}
+		}
+		System.out.print("Array elements after Bubble Shorting: ");
+		for(int k=0;k<n;k++)
+			System.out.print(ar[k]+" ");
+	}
+}
+
+/*
+E:\sasi>java BubbleSort
+enter size of array:
+4
+enter array elements:
+88 66 99 11
+Array elements after Bubble Shorting: 11 66 88 99
+*/
